@@ -1,12 +1,8 @@
-import greeter = require('./greeter');  
-import $ = require('jquery');
+import { greet } from './greeter';  
+import * as api  from 'api';
 
-import api = require('./api');
+let host = new api.DefaultApi();
 
-$(() => {
-  let host = new api.DefaultApi();
-  
-  host.get( (data: string) =>
-    $(document.body).html(greeter(data))
-  );
-});
+window.onload = function(){
+  document.body.innerText = greet(host.foo()); 
+};

@@ -1,4 +1,4 @@
 node_modules
 dist
 
-bundle-generated-code.js
+module-generated-code.js

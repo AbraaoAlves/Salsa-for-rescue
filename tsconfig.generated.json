@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
-    "module": "none",
-    "target": "es6",
-    
     "allowJs": true,
-    "outFile": "bundle-generated-code.js"
+    "outFile": "module-generated-code.js"
   },
   "files": [
     "generated-code.ts",

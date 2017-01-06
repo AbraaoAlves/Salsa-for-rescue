@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {  
   entry: './app.ts',
 
@@ -7,7 +9,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.webpack.js', '.web.js', '.ts', '.js'],
     alias:{
-      api:'./bundle-generated-code.js'
+      "api": path.resolve(__dirname, "./module-generated-code.js")
     }
   },
   module: {
